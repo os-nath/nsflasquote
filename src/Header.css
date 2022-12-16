@@ -1,0 +1,14 @@
+p {
+  color: aliceblue;
+  margin-top: 4vh;
+}
+
+.header {
+  margin: 0;
+}
+
+.avatarUsername {
+    color: #fff;
+    margin-top: 3.5vh;
+    margin-left: 1vh;
+}
