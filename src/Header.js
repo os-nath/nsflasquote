@@ -1,6 +1,6 @@
 import React from "react";
-import { Avatar, Card, Grid, CardContent, TextField } from "@mui/material";
-import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import { Avatar, Card, Grid, CardContent } from "@mui/material";
+
 
 import "./Header.css";
 
@@ -59,11 +59,4 @@ function Header() {
 
 export default Header;
 
-<SearchRoundedIcon sx={{ color: "#BF4BE3" }} />;
 
-<TextField
-  id="outlined-search"
-  type="search"
-  size="small"
-  sx={{ width: "34vh", height: 36, p: 0, m: 0, bgcolor: "white" }}
-/>;
