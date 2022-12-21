@@ -7,6 +7,7 @@ import {
   Paper,
   styled,
   TextField,
+  Button,
 } from "@mui/material";
 
 import "./App.css";
@@ -29,15 +30,20 @@ export function Content() {
         mr: 0,
         mb: 2,
         ml: 0,
-        bgcolor: "#F1EFF2",
+        bgcolor: "green",
         display: "inline-flex",
         flexDirection: "row",
         alignContent: "flex-start",
       }}
     >
-      <Grid xs={8} sx={{ mb: 1, ml: 3 }}>
+      <Grid xs={12} sx={{ mb: 1, ml: 3, mr: 3 }}>
         <Card
-          sx={{ height: "50px", bgcolor: "transparent", boxShadow: "none" }}
+          sx={{
+            height: "50px",
+            bgcolor: "pink",
+            boxShadow: "none",
+            width: "100%",
+          }}
         >
           <Grid
             item
@@ -57,6 +63,7 @@ export function Content() {
           >
             Quote 1
           </Grid>
+
           <Grid
             item
             xs={2}
@@ -94,28 +101,49 @@ export function Content() {
 
           <Grid
             item
-            xs={6}
+            xs={2}
+            sx={{
+              display: "inline-flex",
+              border: 1,
+              p: 0.5,
+              borderRadius: 2,
+              borderColor: "#FFC20E",
+              m: 1,
+              boxShadow: 5,
+              bgcolor: "#FFC20E",
+              color: "#001864",
+              mb: 10,
+            }}
+          >
+            Quote 1
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
             sx={{
               bgcolor: "transparent",
               display: "inline-flex",
               justifyContent: "flex-end",
               alignItems: "right",
             }}
-          >
+          > 
             <TextField
               id="outlined-search"
-              label="Type a city name"
+              label="Search quotes"
               type="search"
               size="small"
               sx={{
                 width: "40vh",
                 height: 36,
                 p: "4px",
-                m: 0,
+                ml: 41,
                 alignContent: "right",
                 alignItems: "right",
               }}
+            
             />
+            
           </Grid>
         </Card>
       </Grid>
@@ -153,7 +181,7 @@ export function Content() {
         >
           <TextField
             id="outlined-search"
-            label="Type a city name"
+            label="Quote's title"
             type="search"
             size="small"
             sx={{
