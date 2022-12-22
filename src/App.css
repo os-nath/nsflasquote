@@ -5,7 +5,6 @@ font-family: "Montserrat", sans-serif;
 }
 
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -16,17 +15,6 @@ font-family: "Montserrat", sans-serif;
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-/* 
-.newQuoteBtn {
-  color: green;
-} */
-
-/* .quoteTabs {
-border: 3px;
-}
- */
-
 
 
 
