@@ -330,6 +330,13 @@ export function Content() {
             </Grid>
           </Grid>{" "}
         </Card>
+        <TextField
+          id="outlined-basic"
+          label="Notes"
+          variant="outlined"
+          multiline
+          sx={{ m: 3 }}
+        />
       </Card>
 
       <Card
@@ -343,47 +350,75 @@ export function Content() {
         }}
       >
         <Grid
-          item
-          xs={8}
-          sx={{
-            bgcolor: "transparent",
-            display: "inline-flex",
-            justifyContent: "flex-end",
-            m: 1,
-          }}
+          container
+          sx={{ display: "inline-flex", justifyContent: "space-around" }}
         >
-          <TextField
-            id="outlined-search"
-            label="Search items"
-            type="search"
-            size="small"
-            sx={{ height: 46, p: "2px", m: 1 }}
-          />
           <Grid
             item
-            xs={7}
+            xs={8}
             sx={{
               bgcolor: "transparent",
               display: "inline-flex",
               justifyContent: "flex-end",
-              mt: 2.5,
-              ml: 5,
-              mr: 0,
-              color: "#001864",
+              m: 1,
             }}
           >
-            <AddCircleRoundedIcon
-              sx={{
-                mr: 1,
-                mt: -0.5,
-                bgcolor: "#001864",
-                borderRadius: 100,
-                color: "#FFC20E",
-              }}
+            <TextField
+              id="outlined-search"
+              label="Search items"
+              type="search"
+              size="small"
+              sx={{ height: 46, p: "2px", m: 1 }}
             />
-            Add item
+            <Grid
+              item
+              xs={7}
+              sx={{
+                bgcolor: "transparent",
+                display: "inline-flex",
+                justifyContent: "flex-end",
+                mt: 2.5,
+                ml: 5,
+                mr: 0,
+                color: "#001864",
+              }}
+            >
+              <AddCircleRoundedIcon
+                sx={{
+                  mr: 1,
+                  mt: -0.5,
+                  bgcolor: "#001864",
+                  borderRadius: 100,
+                  color: "#FFC20E",
+                }}
+              />
+              Add item
+            </Grid>
           </Grid>
         </Grid>
+
+        <Card sx={{ mt: 0, mb: 10, boxShadow: "none" }}>
+          <Grid
+            container
+            sx={{
+              color: "#001864",
+              fontWeight: 600,
+              display: "inline-flex",
+              justifyContent: "space-around",
+              fontSize: 16,
+              mt: 0,
+            }}
+          >
+            <Grid item xs={1} sx={{}}>
+              Items
+            </Grid>
+
+            <Grid item xs={1} sx={{}}>
+              Price
+            </Grid>
+            <Divider sx={{ bgcolor: "#FFC20E", width: "92%", ml: 3 }} />
+          </Grid>
+        </Card>
       </Card>
     </Grid>
   );
