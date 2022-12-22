@@ -12,6 +12,8 @@ import {
 } from "@mui/material";
 
 import AddCircleRoundedIcon from "@mui/icons-material/AddCircleRounded";
+import DeleteOutlineRoundedIcon from "@mui/icons-material/DeleteOutlineRounded";
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
 import "./Content.css";
 
@@ -228,7 +230,7 @@ export function Content() {
           </Grid>
         </Grid>
 
-        <Card sx={{ mt: 2, mb: 10, boxShadow: "none" }}>
+        <Card sx={{ mt: 2, mb: 2, boxShadow: "none" }}>
           <Grid
             container
             sx={{
@@ -240,7 +242,7 @@ export function Content() {
               mt: 2,
             }}
           >
-            <Grid item xs={1} sx={{}}>
+            <Grid item xs={1} sx={{ mr: -2, ml: 1 }}>
               <AddCircleRoundedIcon
                 sx={{
                   bgcolor: "#001864",
@@ -250,7 +252,11 @@ export function Content() {
               />
             </Grid>
 
-            <Grid item xs={1} sx={{ flexGrow: 2, alignSelf: "flex-start" }}>
+            <Grid
+              item
+              xs={1}
+              sx={{ flexGrow: 2, alignSelf: "flex-start", ml: -6, mr: 18 }}
+            >
               Services
             </Grid>
 
@@ -274,14 +280,55 @@ export function Content() {
               Sell
             </Grid>
           </Grid>{" "}
-          <Divider
+          <Divider sx={{ bgcolor: "#FFC20E", width: "92%", ml: 3 }} />
+        </Card>
+
+        <Card sx={{ mt: 0, mb: 10, boxShadow: "none" }}>
+          <Grid
+            container
             sx={{
-              color: "yellowgreen",
-              bgcolor: "#FFC20E",
-              width: "92%",
-              ml: 3,
+              color: "#001864",
+              fontWeight: 600,
+              display: "inline-flex",
+              justifyContent: "space-around",
+              fontSize: 16,
+              mt: 0,
             }}
-          />
+          >
+            <Grid item xs={1} sx={{ ml: 2 }}>
+              <DeleteOutlineRoundedIcon sx={{ color: "#AC0000" }} />
+
+              <KeyboardArrowDownRoundedIcon />
+            </Grid>
+
+            <Grid
+              item
+              xs={3}
+              sx={{ flexGrow: 2, alignSelf: "flex-start", ml: -7 }}
+            >
+              Mallina site Unified Comms
+            </Grid>
+
+            <Grid item xs={1} sx={{}}>
+              AAPT
+            </Grid>
+
+            <Grid item xs={1} sx={{}}>
+              0043569MA
+            </Grid>
+
+            <Grid item xs={1} sx={{}}>
+              1
+            </Grid>
+
+            <Grid item xs={1} sx={{}}>
+              $86
+            </Grid>
+
+            <Grid item xs={1} sx={{}}>
+              $100
+            </Grid>
+          </Grid>{" "}
         </Card>
       </Card>
 
