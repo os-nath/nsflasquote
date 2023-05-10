@@ -1,7 +1,6 @@
 import React from "react";
 import { Avatar, Card, Grid, CardContent } from "@mui/material";
 
-
 import "./Header.css";
 
 function Header() {
@@ -58,5 +57,3 @@ function Header() {
 }
 
 export default Header;
-
-

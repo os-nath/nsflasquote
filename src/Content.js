@@ -118,10 +118,8 @@ export function Content() {
               size="small"
               sx={{
                 width: "40vh",
-                height: 46,
-                p: "4px",
+                height: 36,
                 ml: 46,
-
                 alignContent: "right",
               }}
             />
@@ -202,7 +200,6 @@ export function Content() {
               sx={{
                 width: "40vh",
                 height: 36,
-                p: "2px",
                 m: 0,
                 alignContent: "center",
               }}
